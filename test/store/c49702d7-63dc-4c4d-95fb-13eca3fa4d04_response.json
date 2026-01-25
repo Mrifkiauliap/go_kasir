@@ -1,0 +1,5 @@
+[
+  { "id": 1, "nama": "Indomie Godog", "harga": 3500, "stok": 10 },
+  { "id": 2, "nama": "Vit 1000ml", "harga": 3000, "stok": 40 },
+  { "id": 3, "nama": "kecap", "harga": 12000, "stok": 20 }
+]

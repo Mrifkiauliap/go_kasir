@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Makanan", "description": "Berbagai jenis makanan" },
+  { "id": 2, "name": "Minuman", "description": "Berbagai jenis minuman" },
+  { "id": 3, "name": "Obat", "description": "Berbagai jenis obat-obatan" }
+]
