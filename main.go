@@ -40,9 +40,6 @@ var categories = []Category{
 var produkMutex = &sync.RWMutex{}
 var categoryMutex = &sync.RWMutex{}
 
-var nextProdukID = 4
-var nextCategoryID = 4
-
 // Handler untuk /produk (Get All & Create)
 func handleProdukCollection(w http.ResponseWriter, r *http.Request) {
 	switch r.Method {
@@ -64,9 +61,7 @@ func handleProdukCollection(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		// Menggunakan counter untuk ID unik
-		produkBaru.ID = nextProdukID
-		nextProdukID++
+		produkBaru.ID = len(produk) + 1
 		produk = append(produk, produkBaru)
 
 		w.Header().Set("Content-Type", "application/json")
@@ -160,9 +155,7 @@ func handleCategoryCollection(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		// Menggunakan counter untuk ID unik
-		newCategory.ID = nextCategoryID
-		nextCategoryID++
+		newCategory.ID = len(categories) + 1
 		categories = append(categories, newCategory)
 
 		w.Header().Set("Content-Type", "application/json")

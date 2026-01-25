@@ -22,11 +22,11 @@
               "url": "http://localhost:8080/health"
             },
             "response": {
-              "body": "store/3165f732-0f97-4339-b153-a72edfc2b84f_response.json",
+              "body": "store/a497cb30-5bd2-47f1-b556-1be0422a6ab3_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "40" }
               ],
               "http_version": "HTTP/1.1",
@@ -34,13 +34,13 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.081939Z",
-              "connect": 1177,
-              "end_call": "2026-01-25T09:53:32.083448Z",
-              "name_lookup": 50,
-              "pre_transfer": 1273,
-              "start_transfer": 1451,
-              "total": 1460
+              "begin_call": "2026-01-25T10:41:37.491231Z",
+              "connect": 1765,
+              "end_call": "2026-01-25T10:41:37.494871Z",
+              "name_lookup": 54,
+              "pre_transfer": 1939,
+              "start_transfer": 3567,
+              "total": 3582
             }
           }
         ],
@@ -48,7 +48,7 @@
         "curl_cmd": "curl 'http://localhost:8080/health'",
         "index": 1,
         "line": 3,
-        "time": 1
+        "time": 3
       },
       {
         "asserts": [
@@ -71,11 +71,11 @@
               "url": "http://localhost:8080/produk"
             },
             "response": {
-              "body": "store/c49702d7-63dc-4c4d-95fb-13eca3fa4d04_response.json",
+              "body": "store/9a7f4bf3-6ca2-44b5-b463-3ecbd385785f_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "157" }
               ],
               "http_version": "HTTP/1.1",
@@ -83,13 +83,13 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.084070Z",
+              "begin_call": "2026-01-25T10:41:37.495417Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.084265Z",
+              "end_call": "2026-01-25T10:41:37.496503Z",
               "name_lookup": 0,
-              "pre_transfer": 78,
-              "start_transfer": 181,
-              "total": 185
+              "pre_transfer": 84,
+              "start_transfer": 1056,
+              "total": 1068
             }
           }
         ],
@@ -97,7 +97,7 @@
         "curl_cmd": "curl 'http://localhost:8080/produk'",
         "index": 2,
         "line": 13,
-        "time": 0
+        "time": 1
       },
       {
         "asserts": [
@@ -122,11 +122,11 @@
               "url": "http://localhost:8080/produk"
             },
             "response": {
-              "body": "store/bdc9a276-9fd4-48cb-b824-688d125f423a_response.json",
+              "body": "store/514ae5dd-c06f-43a5-8363-dae7daffbde0_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "57" }
               ],
               "http_version": "HTTP/1.1",
@@ -134,17 +134,17 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.084733Z",
+              "begin_call": "2026-01-25T10:41:37.496981Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.084891Z",
+              "end_call": "2026-01-25T10:41:37.497697Z",
               "name_lookup": 0,
-              "pre_transfer": 88,
-              "start_transfer": 144,
-              "total": 150
+              "pre_transfer": 115,
+              "start_transfer": 692,
+              "total": 701
             }
           }
         ],
-        "captures": [{ "name": "newProdukId", "value": 6 }],
+        "captures": [{ "name": "newProdukId", "value": 4 }],
         "curl_cmd": "curl --header 'Content-Type: application/json' --data $'{\\n  \"nama\": \"Kopi Kapal Api\",\\n  \"harga\": 2500,\\n  \"stok\": 200\\n}\\n' 'http://localhost:8080/produk'",
         "index": 3,
         "line": 21,
@@ -168,14 +168,14 @@
               ],
               "method": "GET",
               "query_string": [],
-              "url": "http://localhost:8080/produk/6"
+              "url": "http://localhost:8080/produk/4"
             },
             "response": {
-              "body": "store/02df0009-f814-4b6c-b5e2-6786498ef491_response.json",
+              "body": "store/f9df977d-8f53-4140-b35b-edc91460ef9e_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "57" }
               ],
               "http_version": "HTTP/1.1",
@@ -183,18 +183,18 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.085307Z",
+              "begin_call": "2026-01-25T10:41:37.498146Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.085420Z",
+              "end_call": "2026-01-25T10:41:37.498621Z",
               "name_lookup": 0,
-              "pre_transfer": 53,
-              "start_transfer": 100,
-              "total": 104
+              "pre_transfer": 78,
+              "start_transfer": 452,
+              "total": 461
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl 'http://localhost:8080/produk/6'",
+        "curl_cmd": "curl 'http://localhost:8080/produk/4'",
         "index": 4,
         "line": 39,
         "time": 0
@@ -220,14 +220,14 @@
               ],
               "method": "PUT",
               "query_string": [],
-              "url": "http://localhost:8080/produk/6"
+              "url": "http://localhost:8080/produk/4"
             },
             "response": {
-              "body": "store/63cbe6e1-8dd5-4284-b1db-452656b2c99d_response.json",
+              "body": "store/9ab03fa4-db66-40c4-baba-810347e5c079_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "56" }
               ],
               "http_version": "HTTP/1.1",
@@ -235,21 +235,21 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.085828Z",
+              "begin_call": "2026-01-25T10:41:37.499089Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.085955Z",
+              "end_call": "2026-01-25T10:41:37.500285Z",
               "name_lookup": 0,
-              "pre_transfer": 57,
-              "start_transfer": 115,
-              "total": 119
+              "pre_transfer": 93,
+              "start_transfer": 1166,
+              "total": 1179
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl --request PUT --header 'Content-Type: application/json' --data $'{\\n  \"nama\": \"Kopi ABC Susu\",\\n  \"harga\": 3000,\\n  \"stok\": 150\\n}\\n' 'http://localhost:8080/produk/6'",
+        "curl_cmd": "curl --request PUT --header 'Content-Type: application/json' --data $'{\\n  \"nama\": \"Kopi ABC Susu\",\\n  \"harga\": 3000,\\n  \"stok\": 150\\n}\\n' 'http://localhost:8080/produk/4'",
         "index": 5,
         "line": 47,
-        "time": 0
+        "time": 1
       },
       {
         "asserts": [
@@ -267,31 +267,31 @@
               ],
               "method": "DELETE",
               "query_string": [],
-              "url": "http://localhost:8080/produk/6"
+              "url": "http://localhost:8080/produk/4"
             },
             "response": {
-              "body": "store/1c217576-ffc9-4569-9459-455003dcec4c_response",
+              "body": "store/1fe10c6b-49d9-48c6-bf63-29a97946e7fd_response",
               "cookies": [],
               "headers": [
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" }
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" }
               ],
               "http_version": "HTTP/1.1",
               "status": 204
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.086344Z",
+              "begin_call": "2026-01-25T10:41:37.500794Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.086452Z",
+              "end_call": "2026-01-25T10:41:37.501152Z",
               "name_lookup": 0,
-              "pre_transfer": 51,
-              "start_transfer": 93,
-              "total": 97
+              "pre_transfer": 94,
+              "start_transfer": 338,
+              "total": 343
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl --request DELETE 'http://localhost:8080/produk/6'",
+        "curl_cmd": "curl --request DELETE 'http://localhost:8080/produk/4'",
         "index": 6,
         "line": 64,
         "time": 0
@@ -312,10 +312,10 @@
               ],
               "method": "GET",
               "query_string": [],
-              "url": "http://localhost:8080/produk/6"
+              "url": "http://localhost:8080/produk/4"
             },
             "response": {
-              "body": "store/43f9be63-5ba2-4fea-ba64-ad3abed7924f_response",
+              "body": "store/25eb9c9b-a9cb-4fd7-afe8-990d6e62a6f3_response",
               "cookies": [],
               "headers": [
                 {
@@ -323,7 +323,7 @@
                   "value": "text/plain; charset=utf-8"
                 },
                 { "name": "X-Content-Type-Options", "value": "nosniff" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "17" }
               ],
               "http_version": "HTTP/1.1",
@@ -331,18 +331,18 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.086763Z",
+              "begin_call": "2026-01-25T10:41:37.501562Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.086877Z",
+              "end_call": "2026-01-25T10:41:37.501896Z",
               "name_lookup": 0,
-              "pre_transfer": 68,
-              "start_transfer": 99,
-              "total": 105
+              "pre_transfer": 73,
+              "start_transfer": 315,
+              "total": 323
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl 'http://localhost:8080/produk/6'",
+        "curl_cmd": "curl 'http://localhost:8080/produk/4'",
         "index": 7,
         "line": 69,
         "time": 0
@@ -368,11 +368,11 @@
               "url": "http://localhost:8080/categories"
             },
             "response": {
-              "body": "store/5fa8ed9d-8436-4518-a8d4-6165d5545d37_response.json",
+              "body": "store/e3bd8556-3ac1-43d9-aa24-b451875f2fef_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "198" }
               ],
               "http_version": "HTTP/1.1",
@@ -380,13 +380,13 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.087268Z",
+              "begin_call": "2026-01-25T10:41:37.502296Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.087441Z",
+              "end_call": "2026-01-25T10:41:37.502578Z",
               "name_lookup": 0,
-              "pre_transfer": 51,
-              "start_transfer": 147,
-              "total": 162
+              "pre_transfer": 63,
+              "start_transfer": 264,
+              "total": 271
             }
           }
         ],
@@ -419,11 +419,11 @@
               "url": "http://localhost:8080/categories"
             },
             "response": {
-              "body": "store/e37a92d7-ce48-4e10-b73f-5457bf1ed064_response.json",
+              "body": "store/67f683a7-1648-48a8-9be3-b777a22c9d95_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "66" }
               ],
               "http_version": "HTTP/1.1",
@@ -431,17 +431,17 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.087893Z",
+              "begin_call": "2026-01-25T10:41:37.503009Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.088035Z",
+              "end_call": "2026-01-25T10:41:37.503228Z",
               "name_lookup": 0,
-              "pre_transfer": 71,
-              "start_transfer": 123,
-              "total": 130
+              "pre_transfer": 68,
+              "start_transfer": 201,
+              "total": 208
             }
           }
         ],
-        "captures": [{ "name": "newCategoryId", "value": 6 }],
+        "captures": [{ "name": "newCategoryId", "value": 4 }],
         "curl_cmd": "curl --header 'Content-Type: application/json' --data $'{\\n  \"name\": \"Bumbu Dapur\",\\n  \"description\": \"Bumbu untuk memasak\"\\n}\\n' 'http://localhost:8080/categories'",
         "index": 9,
         "line": 86,
@@ -465,14 +465,14 @@
               ],
               "method": "GET",
               "query_string": [],
-              "url": "http://localhost:8080/categories/6"
+              "url": "http://localhost:8080/categories/4"
             },
             "response": {
-              "body": "store/7e1fd2e9-df28-4162-b1a7-d427aa3b6c2e_response.json",
+              "body": "store/26e39589-0949-4fe3-9c29-c9ac85728aa2_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "66" }
               ],
               "http_version": "HTTP/1.1",
@@ -480,18 +480,18 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.088456Z",
+              "begin_call": "2026-01-25T10:41:37.503671Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.088563Z",
+              "end_call": "2026-01-25T10:41:37.503856Z",
               "name_lookup": 0,
-              "pre_transfer": 57,
-              "start_transfer": 94,
-              "total": 99
+              "pre_transfer": 73,
+              "start_transfer": 168,
+              "total": 175
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl 'http://localhost:8080/categories/6'",
+        "curl_cmd": "curl 'http://localhost:8080/categories/4'",
         "index": 10,
         "line": 103,
         "time": 0
@@ -516,14 +516,14 @@
               ],
               "method": "PUT",
               "query_string": [],
-              "url": "http://localhost:8080/categories/6"
+              "url": "http://localhost:8080/categories/4"
             },
             "response": {
-              "body": "store/87005145-48fe-4de0-8a70-ffbf5a8c8219_response.json",
+              "body": "store/96652ceb-50cc-458a-90c0-7833af9b9009_response.json",
               "cookies": [],
               "headers": [
                 { "name": "Content-Type", "value": "application/json" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "64" }
               ],
               "http_version": "HTTP/1.1",
@@ -531,18 +531,18 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.088970Z",
+              "begin_call": "2026-01-25T10:41:37.504358Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.089081Z",
+              "end_call": "2026-01-25T10:41:37.504625Z",
               "name_lookup": 0,
-              "pre_transfer": 64,
-              "start_transfer": 98,
-              "total": 102
+              "pre_transfer": 77,
+              "start_transfer": 246,
+              "total": 254
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl --request PUT --header 'Content-Type: application/json' --data $'{\\n  \"name\": \"Bumbu Instan\",\\n  \"description\": \"Bumbu siap pakai\"\\n}\\n' 'http://localhost:8080/categories/6'",
+        "curl_cmd": "curl --request PUT --header 'Content-Type: application/json' --data $'{\\n  \"name\": \"Bumbu Instan\",\\n  \"description\": \"Bumbu siap pakai\"\\n}\\n' 'http://localhost:8080/categories/4'",
         "index": 11,
         "line": 111,
         "time": 0
@@ -563,31 +563,31 @@
               ],
               "method": "DELETE",
               "query_string": [],
-              "url": "http://localhost:8080/categories/6"
+              "url": "http://localhost:8080/categories/4"
             },
             "response": {
-              "body": "store/3205d9e7-f64b-4678-b034-e59b3fab2040_response",
+              "body": "store/bd3c6124-e35e-4b9a-a09d-dd5d06b5ea16_response",
               "cookies": [],
               "headers": [
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" }
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" }
               ],
               "http_version": "HTTP/1.1",
               "status": 204
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.089456Z",
+              "begin_call": "2026-01-25T10:41:37.504944Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.089554Z",
+              "end_call": "2026-01-25T10:41:37.505139Z",
               "name_lookup": 0,
-              "pre_transfer": 48,
-              "start_transfer": 88,
-              "total": 91
+              "pre_transfer": 71,
+              "start_transfer": 172,
+              "total": 185
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl --request DELETE 'http://localhost:8080/categories/6'",
+        "curl_cmd": "curl --request DELETE 'http://localhost:8080/categories/4'",
         "index": 12,
         "line": 126,
         "time": 0
@@ -608,10 +608,10 @@
               ],
               "method": "GET",
               "query_string": [],
-              "url": "http://localhost:8080/categories/6"
+              "url": "http://localhost:8080/categories/4"
             },
             "response": {
-              "body": "store/aa2841cd-cefd-49e0-80ca-b882828ab300_response",
+              "body": "store/3af104a3-141c-4208-a19a-f3238215c5e2_response",
               "cookies": [],
               "headers": [
                 {
@@ -619,7 +619,7 @@
                   "value": "text/plain; charset=utf-8"
                 },
                 { "name": "X-Content-Type-Options", "value": "nosniff" },
-                { "name": "Date", "value": "Sun, 25 Jan 2026 09:53:32 GMT" },
+                { "name": "Date", "value": "Sun, 25 Jan 2026 10:41:37 GMT" },
                 { "name": "Content-Length", "value": "19" }
               ],
               "http_version": "HTTP/1.1",
@@ -627,18 +627,18 @@
             },
             "timings": {
               "app_connect": 0,
-              "begin_call": "2026-01-25T09:53:32.089911Z",
+              "begin_call": "2026-01-25T10:41:37.505552Z",
               "connect": 0,
-              "end_call": "2026-01-25T09:53:32.090028Z",
+              "end_call": "2026-01-25T10:41:37.505881Z",
               "name_lookup": 0,
-              "pre_transfer": 48,
-              "start_transfer": 105,
-              "total": 110
+              "pre_transfer": 58,
+              "start_transfer": 309,
+              "total": 319
             }
           }
         ],
         "captures": [],
-        "curl_cmd": "curl 'http://localhost:8080/categories/6'",
+        "curl_cmd": "curl 'http://localhost:8080/categories/4'",
         "index": 13,
         "line": 131,
         "time": 0
@@ -646,6 +646,6 @@
     ],
     "filename": "test.hurl",
     "success": true,
-    "time": 8
+    "time": 15
   }
 ]
