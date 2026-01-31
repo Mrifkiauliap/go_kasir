@@ -4,29 +4,28 @@ import (
 	"database/sql"
 	"fmt"
 
-	_ "github.com/lib/pq"
+	_ "github.com/jackc/pgx/v5/stdlib"
 	"github.com/spf13/viper"
 )
 
 func InitDB() (*sql.DB, error) {
-	// Connect to database
-	psqlInfo := viper.GetString("DATABASE_URL")
-	if psqlInfo == "" {
+	dsn := viper.GetString("DATABASE_URL")
+	if dsn == "" {
 		return nil, fmt.Errorf("DATABASE_URL is not set")
 	}
 
-	db, err := sql.Open("postgres", psqlInfo)
+	db, err := sql.Open("pgx", dsn)
 	if err != nil {
-		return nil, fmt.Errorf("error opening database: %w", err)
-	}
-
-	if err := db.Ping(); err != nil {
-		return nil, fmt.Errorf("error connecting to database: %w", err)
+		return nil, err
 	}
 
 	db.SetMaxOpenConns(100)
 	db.SetMaxIdleConns(25)
 
-	fmt.Println("Successfully connected to database!")
+	if err := db.Ping(); err != nil {
+		return nil, err
+	}
+
+	fmt.Println("Successfully connected to database (database/sql + pgx)")
 	return db, nil
 }
