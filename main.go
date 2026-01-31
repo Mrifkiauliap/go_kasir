@@ -9,16 +9,20 @@ import (
 	"kasir-api/services"
 	"log"
 	"net/http"
+	"os"
+	"strings"
 
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 )
 
 func main() {
+	viper.AutomaticEnv()
+	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 	// Load config from .env file
-	viper.SetConfigFile(".env")
-	if err := viper.ReadInConfig(); err != nil {
-		log.Fatalf("Error reading config file, %s", err)
+	if _, err := os.Stat(".env"); err == nil {
+		viper.SetConfigFile(".env")
+		_ = viper.ReadInConfig()
 	}
 
 	// Initialize database
