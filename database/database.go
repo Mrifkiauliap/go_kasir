@@ -9,22 +9,18 @@ import (
 )
 
 func InitDB() (*sql.DB, error) {
-	viper.SetConfigFile(".env")
-	if err := viper.ReadInConfig(); err != nil {
-		return nil, fmt.Errorf("error reading config file: %w", err)
+	// Connect to database
+	psqlInfo := viper.GetString("DATABASE_URL")
+	if psqlInfo == "" {
+		return nil, fmt.Errorf("DATABASE_URL is not set")
 	}
-
-	var psqlInfo string
-
-	psqlInfo = viper.GetString("DATABASE_URL")
 
 	db, err := sql.Open("postgres", psqlInfo)
 	if err != nil {
 		return nil, fmt.Errorf("error opening database: %w", err)
 	}
 
-	err = db.Ping()
-	if err != nil {
+	if err := db.Ping(); err != nil {
 		return nil, fmt.Errorf("error connecting to database: %w", err)
 	}
 

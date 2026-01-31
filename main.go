@@ -19,10 +19,13 @@ import (
 func main() {
 	viper.AutomaticEnv()
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
-	// Load config from .env file
+
+	// Load config from .env file if exists
 	if _, err := os.Stat(".env"); err == nil {
 		viper.SetConfigFile(".env")
-		_ = viper.ReadInConfig()
+		if err := viper.ReadInConfig(); err != nil {
+			panic(err)
+		}
 	}
 
 	// Initialize database
