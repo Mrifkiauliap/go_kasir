@@ -27,6 +27,7 @@ func (h *CategoryHandler) GetAllCategories(w http.ResponseWriter, r *http.Reques
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(categories)
 }
 
@@ -43,6 +44,7 @@ func (h *CategoryHandler) GetCategoryByID(w http.ResponseWriter, r *http.Request
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(category)
 }
 
@@ -83,6 +85,7 @@ func (h *CategoryHandler) UpdateCategory(w http.ResponseWriter, r *http.Request)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(updatedCategory)
 }
 

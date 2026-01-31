@@ -5,9 +5,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/gorilla/mux"
 	"kasir-api/domain"
 	"kasir-api/services"
+
+	"github.com/gorilla/mux"
 )
 
 type ProductHandler struct {
@@ -26,6 +27,7 @@ func (h *ProductHandler) GetAllProducts(w http.ResponseWriter, r *http.Request) 
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(products)
 }
 
@@ -42,6 +44,7 @@ func (h *ProductHandler) GetProductByID(w http.ResponseWriter, r *http.Request) 
 		http.Error(w, err.Error(), http.StatusNotFound)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(product)
 }
 
@@ -82,6 +85,7 @@ func (h *ProductHandler) UpdateProduct(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(updatedProduct)
 }
 
